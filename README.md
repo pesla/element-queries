@@ -10,9 +10,9 @@ This library is heavily based on:
 
 I wrote a combination of those two excellent examples because:
 
-- The resize detection in `marcj`'s library seemed to be unreliable during testing
-- The ability to load a library async with requirejs (or another loader) is one of my requirements
-- I found several issues on both sides (ElementQueryElement creation and resize detection) that needed to be fixed
+- The resize detection in `marcj`'s library seemed to be unreliable during testing.
+- The ability to load a library async with requirejs (or another loader) is one of my requirements.
+- I found several issues on both sides (ElementQueryElement creation and resize detection) that needed to be fixed.
 
 Features:
 
@@ -41,12 +41,24 @@ Example
 }
 ```
 
-Include the javascript files at the bottom and you're good to go. No custom javascript calls needed.
+Installation
+------
+
+Include the Javascript-file into your project:
 
 ```html
-<script src="src/ResizeSensor.js"></script>
-<script src="src/ElementQueries.js"></script>
+<script src='dist/element-queries.min.js'></script>
 ```
+
+Make sure to adjust the path to `domReady` so that it can be loaded. After that, just write your CSS and let the magic happen.
+
+In short, the Javascript:
+
+1. Reads all CSSRules and grabs selectors that match [min|max]-[width|height].
+2. Filters out invalid selectors and breaks them into usable pieces.
+3. Initializes resize detection for each valid selector.
+4. Fires a callback whenever an element has resized.
+5. Determines whether or not one of the element queries apply to the current element dimensions and sets the related attribute. 
 
 Issues
 ------
