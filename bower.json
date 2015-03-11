@@ -1,6 +1,6 @@
 {
   "name": "element-queries",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/element-queries.min.js",
   "repository": {
     "type": "git",
