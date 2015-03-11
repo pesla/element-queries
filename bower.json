@@ -1,0 +1,28 @@
+{
+  "name": "element-queries",
+  "version": "0.1",
+  "main": "dist/element-queries.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pesla/element-queries.git"
+  },
+  "homepage": "https://github.com/pesla/element-queries",
+  "authors": [
+    "Peter Slagter (https://github.com/pesla/)"
+  ],
+  "description": "Cross-Browser, event based, element queries",
+  "keywords": [
+    "resize",
+    "events",
+    "javascript",
+    "ecmascript",
+    "element queries",
+    "query",
+    "media queries",
+    "element query"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
+}
