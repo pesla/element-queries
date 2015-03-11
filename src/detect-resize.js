@@ -1,14 +1,14 @@
-
-
 /**
  * Performance friendly element resize detection (using scroll events)
  *
- * @see ()
+ * @see (https://github.com/pesla/element-queries/blob/master/src/detect-resize.js)
  * @author Peter Slagter
- * @copyright MIT ()
+ * @copyright MIT (https://github.com/pesla/element-queries/blob/master/LICENSE)
+ * @preserve
  */
 
 define(function () {
+	"use strict";
 
 	/** @type {Object} */
 	var attachEvent = document.attachEvent;
@@ -81,7 +81,7 @@ define(function () {
 		if (queryData) {
 			element.removeEventListener('scroll', handleOnElementScroll);
 			element.removeChild(queryData.triggerElements.container);
-			delete queryData;
+			delete elementQueryData[element.id];
 		}
 	}
 

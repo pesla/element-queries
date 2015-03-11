@@ -1,12 +1,13 @@
 /**
  * Element Queries is a tiny library that adds support for element based media-queries to all new browsers (incl. IE7+).
  *
- * @see ()
+ * @see (https://github.com/pesla/element-queries/blob/master/src/element-queries.js)
  * @author Peter Slagter
- * @copyright MIT ()
+ * @copyright MIT (https://github.com/pesla/element-queries/blob/master/LICENSE)
+ * @preserve
  */
 
-require(["domReady", "vendor/element-queries/detect-resize"], function (domReady, ResizeDetection) {
+require(["domReady"], function (domReady, ResizeDetection) {
 	"use strict";
 
 	/**
