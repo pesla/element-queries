@@ -1,7 +1,7 @@
 Element Queries
 ===================
 
-Element Queries is a tiny library that adds support for element based media-queries to all new browsers (incl. IE7+).
+Element Queries is a tiny library that adds support for element based media-queries (incl. IE7+).
 
 This library is heavily based on:
 
