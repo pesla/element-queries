@@ -7,7 +7,7 @@
  * @preserve
  */
 
-require(["domReady"], function (domReady, ResizeDetection) {
+require(["domready", "detect-resize"], function (domReady, ResizeDetection) {
 	"use strict";
 
 	/**
