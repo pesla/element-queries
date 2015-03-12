@@ -1,0 +1,14 @@
+{
+  "name": "domready",
+  "homepage": "https://github.com/ded/domready",
+  "version": "0.3.0",
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.0",
+    "commit": "0bf8d64aef085317ff98457b039ffaaff9848dac"
+  },
+  "_source": "git://github.com/ded/domready.git",
+  "_target": "0.3.0",
+  "_originalSource": "domready"
+}
