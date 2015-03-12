@@ -2,22 +2,33 @@ module.exports = function (grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		uglify: {
-			my_target: {
+		requirejs: {
+			mysourcemapped: {
 				options: {
-					sourceMap: true,
-					preserveComments: 'some'
-				},
-				files: {
-					'dist/element-queries.min.js': ['src/detect-resize.js', 'src/element-queries.js']
+					baseUrl : '.',
+					name: 'src/element-queries',
+					out: 'dist/element-queries.min.js',
+					paths: {
+						'domready': 'vendor/domready/ready',
+						'detect-resize': 'src/detect-resize'
+					},
+					removeCombined: true,
+					uglify2: {
+						warnings: true,
+						mangle: true
+					},
+					optimize: 'uglify2',
+					generateSourceMaps: true,
+					preserveLicenseComments: false,
+					useSourceUrl: false
 				}
 			}
 		}
 	});
 
-	// Load the plugin that provides the "uglify" task.
-	grunt.loadNpmTasks('grunt-contrib-uglify');
+	// Load the plugin that provides the 'uglify' task.
+	grunt.loadNpmTasks('grunt-contrib-requirejs');
 
 	// Default task(s).
-	grunt.registerTask('default', ['uglify']);
+	grunt.registerTask('default', ['requirejs']);
 };
