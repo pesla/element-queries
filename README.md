@@ -10,9 +10,11 @@ This library is heavily based on:
 
 I wrote a combination of those two excellent examples because:
 
-- The resize detection in `marcj`'s library seemed to be unreliable during testing.
+- I needed to understand the inner workings in detail.
+- The resize detection in `marcj`'s library seemed to be (very) unreliable during testing.
 - The ability to load a library async with requirejs (or another loader) is one of my requirements.
-- I found several issues on both sides (ElementQueryElement creation and resize detection) that needed to be fixed.
+- I found several blocking (performance) issues on both sides (ElementQueryElement creation and resize detection) that needed to be fixed.
+- I had to optimize the code for readability in the context of our own project(s). 
 
 Features:
 
