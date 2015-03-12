@@ -30,16 +30,24 @@ Example
 -------
 
 ```css
-.widget-name {
+.your-component {
     padding: 25px;
 }
 
-.widget-name[min-width~="500px"] {
+.your-component[max-width~="400px"] {
     padding: 55px;
 }
 
-.widget-name[max-width~="200px"] {
+.your-component[max-width~="200px"] {
     padding: 0;
+}
+
+.another-component[max-width~="400px"] li {
+    display: inline-block;
+}
+ 
+.another-component[min-width="400px"] li {
+    display: block;
 }
 ```
 
