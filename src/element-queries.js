@@ -263,6 +263,12 @@ require(["domready", "detect-resize"], function (domReady, ResizeDetection) {
 						attrValues[attrName] = [];
 					}
 
+					var str = attrValues[attrName].join(' ');
+
+					if (str.indexOf(attrValue) !== -1) {
+						continue;
+					}
+
 					attrValues[attrName].push(attrValue);
 				}
 			}
