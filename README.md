@@ -44,13 +44,13 @@ Example
 Installation
 ------
 
-Include the Javascript-file into your project:
+If you manage your JS modules with require, all you have to do is include the Javascript-file in `/dist` into your project:
 
 ```html
 <script src='dist/element-queries.min.js'></script>
 ```
 
-Make sure to adjust the path to `domReady` so that it can be loaded. After that, just write your CSS and let the magic happen.
+After that, just write your CSS and let the magic happen.
 
 In short, the Javascript:
 
@@ -58,13 +58,14 @@ In short, the Javascript:
 2. Filters out invalid selectors and breaks them into usable pieces.
 3. Initializes resize detection for each valid selector.
 4. Fires a callback whenever an element has resized.
-5. Determines whether or not one of the element queries apply to the current element dimensions and sets the related attribute. 
+5. Determines whether or not one of the element queries apply to the current element dimensions and sets the related attribute.
 
-Issues
+Remarks
 ------
 
 - Does not work on `img` and other elements that can't contain other elements. Wrapping with a `div` works fine.
 - The resize detector adds additional elements into the target element. The target element is forced to be `position: relative;`.
+- Depends on RequireJS. It's easy to adjust the `/src` files so that they support another module loader. Making them independent of a module loader is very easy aswell.
 
 License
 -------
