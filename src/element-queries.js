@@ -102,7 +102,7 @@ require(["domready", "detect-resize"], function (domReady, ResizeDetection) {
 			var selector = rules.toLowerCase();
 
 			if (isElementQuerySelector(selector)) {
-				return [selector];
+				return [rules];
 			}
 
 			return [];
