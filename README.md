@@ -1,3 +1,5 @@
+**Development in this repository has halted. Check out https://github.com/procurios/ElementQueries and https://github.com/procurios/ResizeSensor for an improved version of Element Queries.**
+
 Element Queries
 ===================
 
